@@ -1,7 +1,7 @@
 
 import React from 'react';
 import './App.css';
-import BookingForm from './Bookingform.js';
+import BookingForm from './BookingForm.js';
 function App() {
   return (
     <div className="App">
