@@ -4,6 +4,8 @@ import Header from './components/Header';
 import Rooms from './components/Rooms';
 import Dishes from './components/Dishes';
 import BookingForm from './components/BookingForm';
+import CanvaStylePricing from './components/CanvaStylePricing';
+
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       <Rooms />
       <Dishes />
       <BookingForm />
+      <CanvaStylePricing />
     </div>
   );
 }
