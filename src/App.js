@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Rooms from './components/Rooms';
 import Dishes from './components/Dishes';
 import BookingForm from './components/BookingForm';
+import JobseekerLogin from './components/JobseekerLogin/JobseekerLogin';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Rooms />
       <Dishes />
       <BookingForm />
+      <JobseekerLogin />
     </div>
   );
 }

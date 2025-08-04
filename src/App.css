@@ -39,17 +39,17 @@ body {
 /* Gallery */
 .gallery {
   display: flex;
+  gap: 20px;
   justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
 .gallery img {
-  width: 300px;
-  max-width: 100%;
+  width: 200px;
+  height: auto;
   border-radius: 10px;
-  object-fit: cover;
 }
+
 
 /* Booking Form */
 .form-section {
