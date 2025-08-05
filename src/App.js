@@ -1,21 +1,26 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Header from './components/Header';
 import Rooms from './components/Rooms';
 import Dishes from './components/Dishes';
 import BookingForm from './components/BookingForm';
 import CanvaStylePricing from './components/CanvaStylePricing';
+import JobseekerLogin from './components/JobseekerLogin/JobseekerLogin';
 
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <Header />
-      <Rooms />
-      <Dishes />
-      <BookingForm />
-      <CanvaStylePricing />
-    </div>
+      <Routes>
+        <Route path="/" element={<Rooms />} />
+        <Route path="/dishes" element={<Dishes />} />
+        <Route path="/booking" element={<BookingForm />} />
+        <Route path="/pricing" element={<CanvaStylePricing />} />
+        <Route path="/login" element={<JobseekerLogin />} />
+      </Routes>
+    </Router>
   );
 }
 
